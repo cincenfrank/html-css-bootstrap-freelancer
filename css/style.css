@@ -1,3 +1,25 @@
+:root {
+  --bs-success-rgb: 87, 185, 157;
+  --bs-dark-rgb: 47, 62, 79;
+  --custom-footer-bg-color-rgb: 63, 84, 107;
+}
+.custom-bg {
+  background-color: rgb(var(--custom-footer-bg-color-rgb));
+  color: white;
+}
+.custom-link {
+  color: rgb(var(--bs-success-rgb));
+  text-decoration: none;
+}
+
+.custom-btn {
+  border-color: var(--bs-success-rgb);
+}
+
+form .form-floating #messageInput {
+  height: 150px;
+}
+
 .custom-card .card-img-overlay {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
