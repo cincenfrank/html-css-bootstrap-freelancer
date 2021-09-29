@@ -1,0 +1,54 @@
+.custom-card .card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  overflow: hidden;
+
+  transition: all 0.3s;
+  opacity: 0;
+}
+.custom-card:hover .card-img-overlay {
+  opacity: 1;
+}
+.custom-card:hover .card-img-overlay .card-title {
+  margin-top: 0;
+}
+.custom-card .card-img-overlay .card-title {
+  text-transform: uppercase;
+  margin-top: 100%;
+  transition: margin-top 0.4s;
+}
+.custom-divider {
+  display: inline-flex;
+  width: 40%;
+  align-items: center;
+}
+.custom-divider i {
+  padding: 8px;
+  font-size: 30px;
+}
+.custom-divider i::before {
+  font-family: "Font Awesome 5 Free";
+  /* font-weight: 500; */
+  font-weight: 600;
+  content: "\f005";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  color: black;
+}
+.custom-divider::before,
+.custom-divider::after {
+  content: "";
+  height: 2px;
+  flex-grow: 1;
+  background-color: black;
+  display: inline-block;
+}
+.custom-divider-white::before,
+.custom-divider-white::after {
+  background-color: white;
+}
+.custom-divider-white i::before {
+  color: white;
+}
