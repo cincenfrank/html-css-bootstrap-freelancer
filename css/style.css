@@ -24,7 +24,7 @@ form .form-floating #messageInput {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   overflow: hidden;
-
+  backdrop-filter: blur(10px);
   transition: all 0.3s;
   opacity: 0;
 }
